@@ -409,10 +409,12 @@ hr {
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
-    font-size: 18px; }
+    font-size: 22px;
+    line-height: 53px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+        font-size: 12px;
+        line-height: 29px; } }
 
 @-webkit-keyframes appear {
   0% {

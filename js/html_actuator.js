@@ -72,18 +72,14 @@ HTMLActuator.prototype.addTile = function (tile) {
     256: "抹茶",
     512: "抹茶鮮奶油",
     1024: "組裝",
-    2048: "抹茶千層派",
-    4096: "我覺得好吃",
-    8192: "你覺得好吃",
-    16384: "他覺得好吃",
-    65536: "甜點大師"
+    2048: "抹茶千層派"
   }
 
   inner.classList.add("tile-inner");
   if (tile.value <= 2048)
     inner.textContent = mapping[tile.value];
   else
-    inner.textContent = "甜點大師 等級 " + (Math.log2(tile.value) - 10);
+    inner.textContent = "甜點大師 等級 " + (Math.log2(tile.value) - 11);
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -147,7 +143,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "喜迎甜點小師傅！" : "下去當學徒！";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
