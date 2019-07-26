@@ -60,9 +60,31 @@ HTMLActuator.prototype.addTile = function (tile) {
   if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
+  
+  const mapping = {
+    2: "低筋麵粉",
+    4: "雞蛋",
+    8: "糖",
+    16: "牛奶",
+    32: "麵糊",
+    64: "麵皮",
+    128: "鮮奶油",
+    256: "抹茶",
+    512: "抹茶鮮奶油",
+    1024: "組裝",
+    2048: "抹茶千層派",
+    4096: "我覺得好吃",
+    8192: "你覺得好吃",
+    16384: "他覺得好吃",
+    32768: "Everyone覺得好吃",
+    65536: "你是甜點大師！"
+  }
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  if (tile.value <= 2048)
+    inner.textContent = mapping[tile.value];
+  else
+    inner.textContent = "甜點大師 等級 " + (Math.log2(tile.value) - 10);
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
