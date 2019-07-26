@@ -76,8 +76,7 @@ HTMLActuator.prototype.addTile = function (tile) {
     4096: "我覺得好吃",
     8192: "你覺得好吃",
     16384: "他覺得好吃",
-    32768: "Everyone覺得好吃",
-    65536: "你是甜點大師！"
+    65536: "甜點大師"
   }
 
   inner.classList.add("tile-inner");
