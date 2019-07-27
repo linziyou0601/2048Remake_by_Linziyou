@@ -608,7 +608,7 @@ hr {
         line-height: 14px; } }
   .tile.tile-8192 .tile-inner {
     color: #f9f6f2;
-    background: rgba(163, 73, 164, 1);
+    background: rgb(135, 53, 136);
     font-size: 16px; }
     @media screen and (max-width: 480px) {
       .tile.tile-8192 .tile-inner {
@@ -616,7 +616,7 @@ hr {
         line-height: 14px; } }
   .tile.tile-16384 .tile-inner {
     color: #f9f6f2;
-    background: rgba(163, 73, 164, 1);
+    background: rgb(124, 38, 126);
     font-size: 18px;
     line-height: 26px; }
     @media screen and (max-width: 480px) {
@@ -625,7 +625,7 @@ hr {
         line-height: 14px; } }
   .tile.tile-32768 .tile-inner {
     color: #f9f6f2;
-    background: rgba(163, 73, 164, 1);
+    background: rgb(104, 20, 105);
     font-size: 18px;
     line-height: 26px; }
     @media screen and (max-width: 480px) {
@@ -634,7 +634,7 @@ hr {
         line-height: 14px; } }
   .tile.tile-65536 .tile-inner {
     color: #f9f6f2;
-    background: rgba(163, 73, 164, 1.0);
+    background: rgb(64, 7, 65);
     font-size: 18px;
     line-height: 26px; }
     @media screen and (max-width: 480px) {
@@ -653,7 +653,7 @@ hr {
         letter-spacing: -1px; } }
   .tile.tile-262144 .tile-inner {
     color: #f9f6f2;
-    background: rgba(63, 72, 204, 1);
+    background: rgb(98, 107, 226);
     font-size: 16px; }
     @media screen and (max-width: 480px) {
       .tile.tile-262144 .tile-inner {
@@ -661,7 +661,7 @@ hr {
         line-height: 14px; } }
   .tile.tile-524288 .tile-inner {
     color: #f9f6f2;
-    background: rgba(63, 72, 204, 1);
+    background: rgb(74, 85, 233);
     font-size: 20px; }
     @media screen and (max-width: 480px) {
       .tile.tile-524288 .tile-inner {
@@ -676,14 +676,14 @@ hr {
         line-height: 14px; } }
   .tile.tile-2097152 .tile-inner {
     color: #f9f6f2;
-    background: rgba(63, 72, 204, 1);
+    background: rgb(99, 69, 134);
     font-size: 20px; }
     @media screen and (max-width: 480px) {
       .tile.tile-2097152 .tile-inner {
         font-size: 13px; } }
   .tile.tile-4194304 .tile-inner {
     color: #f9f6f2;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgb(126, 31, 86);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 20px; }
     @media screen and (max-width: 480px) {
@@ -691,7 +691,7 @@ hr {
         font-size: 13px; } }
   .tile.tile-8388608 .tile-inner {
     color: #f9f6f2;
-    background: rgba(0, 0, 0, 0.60);
+    background: rgb(116, 37, 85);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.10), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 16px;
     line-height: 26px; }
