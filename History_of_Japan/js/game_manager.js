@@ -5,6 +5,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.actuator       = new Actuator;
 
   this.startTiles     = 4;
+  this.stepTiles      = 2;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -180,7 +181,7 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
-    for (var i = 0; i < this.startTiles / 2; i++) {
+    for (var i = 0; i < Math.floor(Math.random()*this.stepTiles)+1; i++) {
       this.addRandomTile();
     }
 

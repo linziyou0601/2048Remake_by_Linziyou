@@ -4,7 +4,8 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.storageManager = new StorageManager;
   this.actuator       = new Actuator;
 
-  this.startTiles     = 2;
+  this.startTiles     = 6;
+  this.stepTiles      = 3;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -180,7 +181,9 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
-    this.addRandomTile();
+    for (var i = 0; i < Math.floor(Math.random()*this.stepTiles)+1; i++) {
+      this.addRandomTile();
+    }
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
