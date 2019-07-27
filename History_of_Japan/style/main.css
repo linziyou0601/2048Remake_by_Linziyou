@@ -90,7 +90,7 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "甜點積分"; }
+  content: "天皇積分"; }
 
 .best-container:after {
   content: "最佳積分"; }
