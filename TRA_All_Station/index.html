@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>台鐵環島2048 | Taiwan Railway 2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">台鐵環島</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Taiwan Railway 2048!! 終極大挑戰！！</p>
+      <a class="restart-button">新遊戲</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">繼續搭乘</a>
+          <a class="retry-button">再搭一次</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">
+      演進：<br></strong>
+      <strong class="important">緃貫線北：</strong>基隆、三坑、八堵、七堵、百福、五堵、汐止、汐科、南港、松山、台北、萬華、板橋、浮洲、樹林、南樹林、山佳、鶯歌、桃園、內壢、中壢、埔心、楊梅、富岡、新富、北湖、湖口、新豐、竹北、北新竹、新竹、三姓橋、香山、崎頂、竹南、<br>
+      <strong class="important">山線：</strong>造橋、豐富、苗栗、南勢、銅鑼、三義、泰安、后里、豐原、栗林、潭子、頭家厝、松竹、太原、精武、台中、五權、大慶、烏日、新烏日、成功、<br>
+      <strong class="important">海線：</strong>談文、大山、後龍、龍港、白沙屯、新埔、通霄、苑裡、日南、大甲、台中港、清水、沙鹿、龍井、大肚、追分、<br>
+      <strong class="important">緃貫線南：</strong>、彰化、花壇、大村、員林、永靖、社頭、田中、二水、林內、石榴、斗六、斗南、石龜、大林、民雄、嘉北、嘉義、水上、南靖、後壁、新營、柳營、林鳳營、隆田、拔林、善化、南科、新市、永康、大橋、台南、保安、仁德、中洲、大湖、路竹、岡山、橋頭、楠梓、新左營、左營、內惟、美術館、鼓山、三塊厝、高雄、<br>
+      <strong class="important">屏東線：</strong>民族、科工館、正義、鳳山、後庄、九曲堂、六塊厝、屏東、歸來、麟洛、西勢、竹田、潮州、崁頂、南州、鎮安、林邊、佳冬、東海、枋寮、<br>
+      <strong class="important">南迴線：</strong>加祿、內獅、枋山、枋野、古莊號、大武、瀧溪、金崙、太麻里、知本、康樂、<br>
+      <strong class="important">台東線：</strong>台東、山里、鹿野、瑞源、瑞和、關山、海端、池上、富里、東竹、東里、玉里、三民、瑞穗、富源、大富、光復、萬榮、鳳林、南平、林榮新光、豐田、壽豐、平和、志學、吉安、<br>
+      <strong class="important"></strong>北迴線</strong>、花蓮、北埔、景美、新城、崇德、和仁、和平、漢本、武塔、南澳、東澳、永樂、<br>
+      <strong class="important">宜蘭線：</strong>蘇澳、蘇澳新、新馬、冬山、羅東、中里、二結、宜蘭、四城、礁溪、頂埔、頭城、外澳、龜山、大溪、大里、石城、福隆、貢寮、雙溪、牡丹、三貂嶺、侯硐、瑞芳、四腳亭、暖暖、<br>
+      <br>
+      <strong>中途獲勝點：竹南</strong>
+      <a class="anchor-button" href="../index.html">回選單</a>
+    </p>
+    <hr>
+    <p style="text-align: center">
+      <a class="github-button" href="https://github.com/linziyou0601/Matcha-Mille-Crepe-Cake-2048" data-size="large"
+        aria-label="Star linziyou0601/Matcha-Mille-Crepe-Cake-2048 on GitHub">Star</a>
+    </p>
+    <hr>
+    <p>
+      Fork from <a href="https://github.com/gabrielecirulli/2048/">gabrielecirulli/2048</a>
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
