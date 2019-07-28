@@ -103,10 +103,10 @@ button {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "板南點數"; }
+  content: "列車積分"; }
 
 .best-container:after {
-  content: "最佳點數"; }
+  content: "最佳積分"; }
 
 p {
   margin-top: 0;
